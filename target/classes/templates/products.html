@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <style type="text/css">
+   TABLE {
+    width: 400px;
+    border-collapse: collapse;
+   }
+   TD, TH {
+    padding: 5px;
+    border: 2px solid #E0FFFF;
+    text-align: center;
+   }
+   TH {
+    background: #00CED1;
+   }
+   TD {
+    background: #AFEEEE;
+   }
+  </style>
+</head>
+
+<body>
+<h1>Product list</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Cost</th>
+    </tr>
+    <tr th:each="product : ${productList}">
+        <td th:text="${product.id}"/>
+        <td th:text="${product.title}"/>
+        <td th:text="${product.cost}"/>
+</table>
+<td> <a th:href="@{http://localhost:8180/app/products/show_form}">add</a> </td>
+<td> <a th:href="@{http://localhost:8180/app/products/delete}">delete</a> </td>
+
+</body>
+
+</html>
