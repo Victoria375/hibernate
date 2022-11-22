@@ -33,12 +33,12 @@
     <tr>
         <th>ID</th>
         <th>Title</th>
-        <th>Cost</th>
+        <th>Price</th>
     </tr>
     <tr th:each="product : ${productList}">
         <td th:text="${product.id}"/>
         <td th:text="${product.title}"/>
-        <td th:text="${product.cost}"/>
+        <td th:text="${product.price}"/>
 </table>
 <td> <a th:href="@{http://localhost:8180/app/products/show_form}">add</a> </td>
 <td> <a th:href="@{http://localhost:8180/app/products/delete}">delete</a> </td>

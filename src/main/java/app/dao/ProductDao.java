@@ -1,25 +1,25 @@
 package app.dao;
 
+import app.model.Product;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.hibernate.Session;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Service
-public class ProductDao<Product> {
+@Component
+public class ProductDao {
 
-    protected final Class<Product> typeParameterClass;
-
-    @Autowired
-    public ProductDao(Class<Product> typeParameterClass) {
-        this.typeParameterClass = typeParameterClass;
-    }
+ //   protected final Class<Product> typeParameterClass;
+//
+//    public ProductDao(Class<Product> typeParameterClass) {
+//        this.typeParameterClass = typeParameterClass;
+//    }
 
     SessionFactory sessionFactory = new Configuration()
+            .addAnnotatedClass(Product.class)
             .buildSessionFactory();
 
     Session session = null;
@@ -27,7 +27,7 @@ public class ProductDao<Product> {
     public Product findById(Long id) {
         session = sessionFactory.getCurrentSession();
         session.beginTransaction();
-        Product product = (Product) session.get(typeParameterClass, id);
+        Product product = session.get(Product.class, id);
         session.getTransaction().commit();
         if (session.isOpen()) {
             session.close();
@@ -38,9 +38,7 @@ public class ProductDao<Product> {
     public List<Product> findAll() {
         session = sessionFactory.getCurrentSession();
         session.beginTransaction();
-        String hql = String.format("from %s",typeParameterClass.getCanonicalName());
-        Query SQLQuery = session.createQuery(hql);
-        List<Product> list = (List<Product>) SQLQuery.list();
+        List<Product> list = session.createQuery("FROM Product").getResultList();
         session.getTransaction().commit();
         if (session.isOpen()) {
             session.close();
@@ -51,8 +49,11 @@ public class ProductDao<Product> {
     public void deleteById(Long id) {
         session = sessionFactory.getCurrentSession();
         session.beginTransaction();
-        Product del = (Product) session.get(typeParameterClass, id);
-        session.delete(del);
+        session.createQuery("DELETE FROM Product WHERE id = :id")
+                .setParameter("id", id)
+                .executeUpdate();
+//        Product del = (Product) session.get(Product.class, id);
+//        session.delete(del);
         session.getTransaction().commit();
         if (session.isOpen()) {
             session.close();

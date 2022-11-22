@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="598c22a0-eafe-40ca-ba00-30643a5a1df1" name="Changes" comment="" />
+    <list default="true" id="598c22a0-eafe-40ca-ba00-30643a5a1df1" name="Changes" comment="hibernate">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson5/MainApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson5/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/product_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/ProductDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/MainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/product_form.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +31,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -46,6 +63,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HgNaCTlVygbHlEeJq44olcLhGp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -102,6 +120,29 @@
       <option name="presentableId" value="Default" />
       <updated>1668702827786</updated>
     </task>
+    <task id="LOCAL-00001" summary="hibernate">
+      <created>1668974241859</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668974241859</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value="hibernate" />
   </component>
 </project>
