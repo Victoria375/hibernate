@@ -7,10 +7,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Products</title>
+    <title>Orders</title>
     <style type="text/css">
    TABLE {
-    width: 400px;
+    width: 600px;
     border-collapse: collapse;
    }
    TD, TH {
@@ -28,20 +28,23 @@
 </head>
 
 <body>
-<h1>Product list</h1>
+<h1>Orders</h1>
 <table>
     <tr>
         <th>ID</th>
-        <th>Title</th>
-        <th>Price</th>
+        <th>Customer</th>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Sum</th>
     </tr>
-    <tr th:each="product : ${productList}">
+
+    <tr th:each="orders : ${ordersList}">
+        <td th:text="${orders.id}"/>
+        <td th:text="${customer.id}"/>
         <td th:text="${product.id}"/>
-        <td th:text="${product.title}"/>
-        <td th:text="${product.price}"/>
+        <td th:text="${orders.quantity}"/>
+        <td th:text="${orders.sum}"/>
 </table>
-<td> <a th:href="@{http://localhost:8180/app/products/show_form}">add</a> </td>
-<td> <a th:href="@{http://localhost:8180/app/products/show_delete_form}">delete</a> </td>
 
 </body>
 

@@ -29,6 +29,11 @@ public class ProductController {
         return "product_form";
     }
 
+    @GetMapping("/show_delete_form")
+    public String showDeleteFormPage() {
+        return "product_delete_form";
+    }
+
     @PostMapping("/add")
     public String addProduct(@RequestParam String title, @RequestParam String cost) {
         Product product = new Product(title, Integer.valueOf(cost));
@@ -36,10 +41,10 @@ public class ProductController {
         return "redirect:/products/list";
     }
 
-    @GetMapping("/delete")
-    public String deleteProduct(@RequestParam Long id, Model model) {
+    @PostMapping("/delete")
+    public String deleteProduct(@RequestParam Long id) {
         productService.deleteById(id);
-        model.addAttribute("productList", productService.findAll());
+        //model.addAttribute("productList", productService.findAll());
         return "redirect:/products/list";
     }
 }
