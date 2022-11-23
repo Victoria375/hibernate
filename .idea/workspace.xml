@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="598c22a0-eafe-40ca-ba00-30643a5a1df1" name="Changes" comment="general updates">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SessionFactoryUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/orders.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product_delete_form.html" afterDir="false" />
+    <list default="true" id="598c22a0-eafe-40ca-ba00-30643a5a1df1" name="Changes" comment="hibernate part 2">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/scriptSQL.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dao/ProductDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +71,7 @@
     <property name="JavaClassFindUsagesOptions.isSearchForTextOccurrences" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -90,8 +79,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Виктория\IdeaProjects\hibernate\src\main\resources\templates" />
       <recent name="C:\Users\Виктория\IdeaProjects\hibernate\src\main\resources" />
+      <recent name="C:\Users\Виктория\IdeaProjects\hibernate\src\main\resources\templates" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -145,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669117401046</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hibernate part 2">
+      <created>1669231294726</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669231294726</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hibernate" />
     <MESSAGE value="general updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="general updates" />
+    <MESSAGE value="hibernate part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="hibernate part 2" />
   </component>
 </project>

@@ -16,8 +16,8 @@ public class OrderService {
         this.orderDao = orderDao;
     }
 
-    public List<Orders> findAll() {
-        return orderDao.findAll();
+    public List<Orders> findAllOrders() {
+        return orderDao.findAllOrders();
     }
 
     public List<Orders> findOrdersByCustomerId (Long id) {

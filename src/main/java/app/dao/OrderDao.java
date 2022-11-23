@@ -17,10 +17,10 @@ public class OrderDao {
 
     Session session = null;
 
-    public List<Orders> findAll() {
+    public List<Orders> findAllOrders() {
         session = sessionFactoryUtils.getSession();
         session.beginTransaction();
-        List<Orders> list = session.createQuery("FROM Orders").getResultList();
+        List<Orders> list = session.createQuery("SELECT o FROM Orders o").getResultList();
         session.getTransaction().commit();
         if (session.isOpen()) {
             session.close();

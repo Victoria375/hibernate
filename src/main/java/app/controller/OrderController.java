@@ -21,18 +21,10 @@ public class OrderController {
 
     @GetMapping("/list")
     public String showAll(Model model) {
-        model.addAttribute("ordersList", orderService.findAll());
+        model.addAttribute("ordersList", orderService.findAllOrders());
         return "orders";
     }
 
-//    @GetMapping("/show_form")
-//    public String showFormPage() {
-//        return "product_form";
-//    }
-//
-//    @GetMapping("/show_delete_form")
-//    public String showDeleteFormPage() {
-//        return "product_delete_form";
-//    }
+
 
 }
