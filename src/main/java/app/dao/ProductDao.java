@@ -1,9 +1,7 @@
 package app.dao;
 
+import app.SessionFactoryUtils;
 import app.model.Product;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
 import org.hibernate.Session;
 import org.springframework.stereotype.Component;
 
@@ -18,14 +16,20 @@ public class ProductDao {
 //        this.typeParameterClass = typeParameterClass;
 //    }
 
-    SessionFactory sessionFactory = new Configuration()
-            .addAnnotatedClass(Product.class)
-            .buildSessionFactory();
+//    SessionFactory sessionFactory = new Configuration()
+//            .addAnnotatedClass(Product.class)
+//            .buildSessionFactory();
+
+    private final SessionFactoryUtils sessionFactoryUtils;
+
+    public ProductDao(SessionFactoryUtils sessionFactoryUtils) {
+        this.sessionFactoryUtils = sessionFactoryUtils;
+    }
 
     Session session = null;
 
     public Product findById(Long id) {
-        session = sessionFactory.getCurrentSession();
+        session = sessionFactoryUtils.getSession();
         session.beginTransaction();
         Product product = session.get(Product.class, id);
         session.getTransaction().commit();
@@ -36,7 +40,7 @@ public class ProductDao {
     }
 
     public List<Product> findAll() {
-        session = sessionFactory.getCurrentSession();
+        session = sessionFactoryUtils.getSession();
         session.beginTransaction();
         List<Product> list = session.createQuery("FROM Product").getResultList();
         session.getTransaction().commit();
@@ -47,7 +51,7 @@ public class ProductDao {
     }
 
     public void deleteById(Long id) {
-        session = sessionFactory.getCurrentSession();
+        session = sessionFactoryUtils.getSession();
         session.beginTransaction();
         session.createQuery("DELETE FROM Product WHERE id = :id")
                 .setParameter("id", id)
@@ -61,7 +65,7 @@ public class ProductDao {
     }
 
     public void saveOrUpdate(Product product) {
-        session = sessionFactory.getCurrentSession();
+        session = sessionFactoryUtils.getSession();
         session.beginTransaction();
         session.update(product);
         session.getTransaction().commit();
@@ -71,7 +75,7 @@ public class ProductDao {
     }
 
     public void add(Product product) {
-        session = sessionFactory.getCurrentSession();
+        session = sessionFactoryUtils.getSession();
         session.beginTransaction();
         session.save(product);
         session.getTransaction().commit();
