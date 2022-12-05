@@ -28,8 +28,9 @@ public class ProductService {
         productDao.deleteById(id);
     }
 
-    public void saveOrUpdate(Product product) {
+    public Product saveOrUpdate(Product product) {
         productDao.saveOrUpdate(product);
+        return product;
     }
 
     public void add(Product product) {
