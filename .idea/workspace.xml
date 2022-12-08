@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="598c22a0-eafe-40ca-ba00-30643a5a1df1" name="Changes" comment="lesson 8">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/ProductNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/ProductsErrorResponse.java" afterDir="false" />
+    <list default="true" id="598c22a0-eafe-40ca-ba00-30643a5a1df1" name="Changes" comment="hibernate part 2.0">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/CartDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/model/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/scriptSQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/scriptSQL.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
     <property name="JavaClassFindUsagesOptions.isSearchForTextOccurrences" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-data" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -108,6 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HibernateApp" />
+        <item itemvalue="Application.MainApp" />
         <item itemvalue="Application.HibernateApp" />
         <item itemvalue="Application.MainApp" />
       </list>

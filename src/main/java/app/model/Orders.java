@@ -37,6 +37,10 @@ public class Orders implements Serializable {
 
     public int getSum() { return sum; }
 
+    public Long getId() {
+        return id;
+    }
+
     public Orders() {
     }
 
