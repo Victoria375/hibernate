@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="598c22a0-eafe-40ca-ba00-30643a5a1df1" name="Changes" comment="hibernate part 2.0">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/dao/CartDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/CartService.java" afterDir="false" />
+    <list default="true" id="598c22a0-eafe-40ca-ba00-30643a5a1df1" name="Changes" comment="cart">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/repositories/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/model/Orders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/scriptSQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/scriptSQL.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -109,10 +113,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainApp" />
+        <item itemvalue="Application.HibernateApp" />
         <item itemvalue="Application.HibernateApp" />
         <item itemvalue="Application.MainApp" />
         <item itemvalue="Application.HibernateApp" />
         <item itemvalue="Application.MainApp" />
+        <item itemvalue="Application.HibernateApp" />
       </list>
     </recent_temporary>
   </component>

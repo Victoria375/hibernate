@@ -32,4 +32,22 @@ select * from product;
 CREATE TABLE IF NOT EXISTS cart (id BIGSERIAL, order_id int REFERENCES orders (id),
 product_id int REFERENCES product (id), quantity int, price int, primary key (id));
 
+--
+
+CREATE TABLE IF NOT EXISTS users (id BIGSERIAL, username VARCHAR(20), password VARCHAR(20), age int, primary key (id));
+
+INSERT INTO users (username, password, age) VALUES
+('user', '$2a$12$Tu9FBCrcvk8qKMX0hJ/p..TSSyTWcyVo2rSW0fRyoapJoWXPs30yG', 26),
+('manager', '$2a$12$pHT98STytkFEG7NzK7zpteHD7mPExsNgcmj.mSm.IdzqkVr5R53vq', 22),
+('admin', '$2a$12$afHxA4xM/R.MrLGWVTJ.4uTwDlUsr5uDBt2eRUKaO2IcxwCnt/cV2', 38),
+('superadmin', '$2a$12$Lm8zzm3yM13.QIWRVedJA.Z1wjIikCI5fduPug17hRV1wtzln3cn6', 33);
+
+CREATE TABLE IF NOT EXISTS roles (id BIGSERIAL, name VARCHAR(20), primary key (id));
+
+INSERT INTO roles (name) VALUES ('ROLE_USER'), ('ROLE_MANAGER'), ('ROLE_ADMIN'), ('ROLE_SUPERADMIN');
+
+CREATE TABLE IF NOT EXISTS users_roles (user_id int REFERENCES users (id), role_id int REFERENCES roles (id));
+
+INSERT INTO users_roles (user_id, role_id) VALUES (1, 1), (2, 2), (3, 3), (4, 4);
+
 
